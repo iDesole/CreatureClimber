@@ -1,0 +1,70 @@
+# Auto-normalize line endings
+* text=auto
+
+# Source
+*.cs text diff=csharp
+*.shader text
+*.cginc text
+*.hlsl text
+*.compute text
+*.json text
+*.xml text
+*.txt text
+*.md text
+*.yml text
+*.yaml text
+*.asmdef text
+*.asmref text
+*.ps1 text
+*.gitignore text
+*.gitattributes text
+*.editorconfig text
+
+# Unity YAML — text so git can diff
+*.meta text
+*.unity text
+*.prefab text
+*.asset text
+*.mat text
+*.anim text
+*.controller text
+*.overrideController text
+*.physicMaterial text
+*.physicsMaterial2D text
+*.mask text
+*.brush text
+*.flare text
+*.fontsettings text
+*.guiskin text
+*.inputactions text
+*.playable text
+*.signal text
+*.spriteatlas text
+*.spriteatlasv2 text
+*.terrainlayer text
+*.preset text
+*.scenetemplate text
+
+# Binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tga binary
+*.tif binary
+*.tiff binary
+*.psd binary
+*.exr binary
+*.hdr binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.aiff binary
+*.fbx binary
+*.obj binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.ttf binary
+*.otf binary
+*.bytes binary

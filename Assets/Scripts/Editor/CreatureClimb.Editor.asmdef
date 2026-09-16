@@ -1,0 +1,21 @@
+{
+    "name": "CreatureClimb.Editor",
+    "rootNamespace": "CreatureClimb.Editor",
+    "references": [
+        "CreatureClimb.Runtime",
+        "Unity.InputSystem",
+        "Unity.InputSystem.ForUI",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

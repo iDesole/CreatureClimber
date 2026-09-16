@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e157e98b6361041b6e25831c7f72d8, type: 3}
+  m_Name: CombatantDatabase
+  m_EditorClassIdentifier: 
+  combatants:
+  - id: bee
+    displayName: bee
+    sprite: {fileID: 6683615111705859281, guid: d6eef40bd8dc0e949ad9a0ca1c14f362, type: 3}
+    scale: 0.8
+    movement: 0
+    speed: 2.4
+  - id: locus
+    displayName: Locus
+    sprite: {fileID: -7918255616463716027, guid: a999abb384c489f4894d4a00874eec48, type: 3}
+    scale: 0.8
+    movement: 1
+    speed: 2.4
+  - id: mosquito
+    displayName: Mosquito
+    sprite: {fileID: 3643050211366897296, guid: 35444cebf02d51f43a37fef047ce1bdd, type: 3}
+    scale: 0.8
+    movement: 0
+    speed: 8
+  - id: fly
+    displayName: Fly
+    sprite: {fileID: -427066485589525634, guid: 22718826dde53724ca1cc4861b44ab8e, type: 3}
+    scale: 0.8
+    movement: 1
+    speed: 5.5

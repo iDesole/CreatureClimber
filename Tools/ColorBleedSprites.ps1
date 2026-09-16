@@ -1,15 +1,15 @@
-# Standalone color-bleed / white-halo defringe for Gemini-imported sprites.
+# Standalone sprite edge cleaner (remove light glow, fill edge color, trim padding).
 # Usage:
 #   powershell -ExecutionPolicy Bypass -File Tools\ColorBleedSprites.ps1
-#   powershell -ExecutionPolicy Bypass -File Tools\ColorBleedSprites.ps1 -Paths "Assets\Sprites\**\*.png" -Overwrite
-#   powershell -ExecutionPolicy Bypass -File Tools\ColorBleedSprites.ps1 -Paths "Assets\Resources\Gemini*.png" -OutDir "Assets\Sprites\Creatures"
+#   powershell -ExecutionPolicy Bypass -File Tools\ColorBleedSprites.ps1 -Paths "Assets\Art\Sprites\**\*.png" -Overwrite
+#   powershell -ExecutionPolicy Bypass -File Tools\ColorBleedSprites.ps1 -Paths "Assets\Art\Reference\*.png" -OutDir "Assets\Art\Sprites\Creatures"
 
 param(
     [string[]]$Paths = @(
-        "Assets\Resources\Gemini_Generated_Image_ag63k6ag63k6ag63-Picsart-BackgroundRemover.png",
-        "Assets\Sprites\Creatures\*.png",
-        "Assets\Sprites\Platforms\*.png",
-        "Assets\Snake Sprite.png"
+        "Assets\Art\Sprites\Creatures\*.png",
+        "Assets\Art\Sprites\Platforms\*.png",
+        "Assets\Art\Sprites\Backgrounds\*.png",
+        "Assets\Art\Sprites\UI\*.png"
     ),
     [string]$OutDir = "",
     [string]$Suffix = "_clean",

@@ -43,9 +43,9 @@ PlayerSettings:
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1080
-  defaultScreenHeight: 2340
+  defaultScreenHeight: 2400
   defaultScreenWidthWeb: 1080
-  defaultScreenHeightWeb: 2340
+  defaultScreenHeightWeb: 2400
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
@@ -73,7 +73,7 @@ PlayerSettings:
   androidBlitType: 0
   androidResizeableActivity: 1
   androidDefaultWindowWidth: 1080
-  androidDefaultWindowHeight: 2340
+  androidDefaultWindowHeight: 2400
   androidMinimumWindowWidth: 400
   androidMinimumWindowHeight: 300
   androidFullscreenMode: 1
