@@ -1,6 +1,8 @@
 # Creature Climber
 
-Portrait mobile climb game in **Unity 6** (URP 2D). Tap left or right to hop up alternating platforms. One climb loop drives several rule sets, a creature shop, and local save.
+Portrait mobile climb game in Unity 6 (URP 2D). Tap left or right to hop up
+alternating platforms. One climb loop drives several rule sets, a creature
+shop, and local save.
 
 <p align="center">
   <img src="Assets/Art/Sprites/Creatures/Frog.png" height="88" alt="Frog"/>
@@ -10,7 +12,7 @@ Portrait mobile climb game in **Unity 6** (URP 2D). Tap left or right to hop up 
   <img src="Assets/Art/Sprites/Creatures/Panda.png" height="88" alt="Panda"/>
 </p>
 
-## Gameplay
+## What it does
 
 | Mode | Idea |
 | --- | --- |
@@ -21,7 +23,8 @@ Portrait mobile climb game in **Unity 6** (URP 2D). Tap left or right to hop up 
 | **Time Trial** | Score as high as you can before the clock hits zero |
 | **Tempo** | Camera auto-scrolls — stay above the rising waterline |
 
-Each mode has **Easy** (mixed pads) and **Hard** (every pad breaks). Time Trial also has 90 / 120 / 200 second clocks.
+Each mode has **Easy** (mixed pads) and **Hard** (every pad breaks). Time Trial
+also has 90 / 120 / 200 second clocks.
 
 Also in the build:
 
@@ -31,22 +34,26 @@ Also in the build:
 - Settings for audio, haptics, and display
 - Buffered local save (`PlayerPrefs`) flushed on app pause
 
+## Controls
+
+| Input | Action |
+| --- | --- |
+| Tap / click left half of the screen, **A**, or **←** | Jump left |
+| Tap / click right half of the screen, **D**, or **→** | Jump right |
+| **Esc** | Pause |
+
+Gamepad d-pad and shoulders work the same way.
+
 ## Stack
 
-- Unity **6000.0.38f1** (Unity 6), Universal Render Pipeline 2D
-- C# runtime + editor tools, split by assembly definition
-- Unity Input System
-- Portrait 1080×2400, Android-oriented player settings
-
-## Open the project
-
-1. Install [Unity Hub](https://unity.com/download) and editor **6000.0.38f1**.
-2. Open this folder as a Unity project.
-3. Load `Assets/Scenes/SampleScene.unity`.
-4. If the scene is empty, use the editor menu **Creature Climb → Build Game Scene**.
-5. Press Play. Tap/click left or right of the creature to jump; Esc pauses.
-
-`Library/`, `Temp/`, `Logs/`, and generated `.csproj` / `.sln` files are gitignored. Unity recreates them on open.
+| Layer | Tech |
+| --- | --- |
+| Engine | Unity **6000.0.38f1** (Unity 6), URP 2D |
+| Language | C# — runtime and editor assemblies |
+| Input | Unity Input System (touch, mouse, keyboard, gamepad) |
+| Data | ScriptableObject databases under `Assets/Data/Resources` |
+| Save | Local `PlayerPrefs`, flushed on OS pause |
+| Target | Portrait 1080×2400, Android-oriented player settings |
 
 ## Layout
 
@@ -72,11 +79,22 @@ ProjectSettings/        Player, physics, editor (Force Text + Visible Meta Files
 Tools/                  Sprite edge-clean PowerShell helper
 ```
 
-Runtime and editor code live in separate assemblies so play-mode code does not depend on `UnityEditor`.
+Runtime and editor code live in separate assemblies so play-mode code does not
+depend on `UnityEditor`. Mode numbers and pad-break timings live in
+`GameModeRules` rather than being copied across spawners and UI.
 
-Mode numbers and pad-break timings live in `GameModeRules` rather than being copied across spawners and UI.
+## Run locally
 
-## Editor menus
+1. Install [Unity Hub](https://unity.com/download) and editor **6000.0.38f1**.
+2. Open this folder as a Unity project.
+3. Load `Assets/Scenes/SampleScene.unity`.
+4. If the scene is empty, use the editor menu **Creature Climb → Build Game Scene**.
+5. Press Play.
+
+`Library/`, `Temp/`, `Logs/`, and generated `.csproj` / `.sln` files are
+gitignored. Unity recreates them on open.
+
+### Editor menus
 
 | Menu | What it does |
 | --- | --- |
@@ -101,3 +119,12 @@ If you are reviewing the code, start here:
 - Unity YAML is stored as text (`Force Text` serialization, Visible Meta Files).
 - Every asset has a `.meta` — keep them next to the file they belong to.
 - Do not commit `Library/`, builds, or keystores.
+
+## License and copyright
+
+Copyright (c) 2026 iDesole. All rights reserved.
+
+This repository is public so the project can be reviewed. It is **not** open
+source. See [LICENSE](LICENSE).
+
+Unity and Unity packages keep their own licenses. See [NOTICE](NOTICE).
