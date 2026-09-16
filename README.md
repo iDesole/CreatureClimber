@@ -122,9 +122,10 @@ If you are reviewing the code, start here:
 
 ## License and copyright
 
-Copyright (c) 2026 iDesole. All rights reserved.
+Copyright (c) 2026 Chase Wilson. All rights reserved.
 
 This repository is public so the project can be reviewed. It is **not** open
-source. See [LICENSE](LICENSE).
+source. See [LICENSE](LICENSE). Permission requests:
+[chasewilsonbusiness@gmail.com](mailto:chasewilsonbusiness@gmail.com).
 
 Unity and Unity packages keep their own licenses. See [NOTICE](NOTICE).
